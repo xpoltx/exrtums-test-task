@@ -55,5 +55,4 @@ If you need any help or have questions, feel free to contact me on Telegram:
 
 ## Hosting
 
-[Hosted link](https://exrtums-test-task.onrender.com/)
-qwee
+[Link to hosted application](https://exrtums-test-task.onrender.com/) (may be long response because of free hosting plan)
