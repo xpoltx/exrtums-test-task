@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EDEDE9;
+    color: #333; 
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #9c9186; 
+}
+
+.ideas, .list, .achievements, .completed {
+    background: #F5EBE0; 
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.idea-grid, .list-grid, .achievements-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.idea {
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    width: 14rem;
+    border: 1px solid #E3D5CA; 
+    border-radius: 5px;
+    margin: 10px 0;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.idea:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.top {
+    flex: 3.75;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.bottom {
+    flex: 0.25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px dashed #000;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.idea h3, .idea p {
+    margin: 0;
+    text-align: center;
+}
+
+.list-grid{
+    gap: 1rem;
+}
+
+.list-grid button {
+    background: #D5BDAF;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s; 
+}
+
+.list-grid button:hover {
+    background-color: #B8A097; 
+}
+
+.ideas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 3rem;
+}
+
+.idea.center {
+    border: #B8A097 solid 3px;
+}
+
+.idea.side .bottom {
+    display: none; 
+}
+
+.achive-btn {
+    background: #D5BDAF;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s; 
+    display: block; 
+    margin: 20px auto 0; 
+}
+
+.achieved {
+    background-color: green;
+    opacity: 0.5;
+}
+
+.achievements {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.achievements-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.achievement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 8rem;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 8rem;
+    border: solid #D5BDAF 3px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.circle:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.achievement span {
+    font-size: 2rem;
+    color: #333; 
+}
+
+.achievement p {
+    margin-top: 0.5rem;
+    color: #b8a999; 
+}
+
+.top-row, .bottom-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.completed table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.completed th, .completed td {
+    padding: 8px;
+    border: none;
+    background-color: #fff;
+}
+
+.completed th {
+    background-color: #F5EBE0; 
+    text-align: left;
+}
+
+.completed tbody {
+    counter-reset: rowNumber;
+}
+
+.completed .index {
+    counter-increment: rowNumber;
+}
+
+.completed .index::before {
+    content: counter(rowNumber);
+    display: block;
+    text-align: center;
+}
+
+.counter {
+    text-align: center;
+}
