@@ -1,5 +1,5 @@
 //~~~~~~api
-const url = 'http://localhost:3000'
+const url = 'https://exrtums-test-task.onrender.com'
 
 const fetchIdeas = async (path) => {
     try {
